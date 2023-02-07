@@ -4,7 +4,7 @@
 {
   imports = [
     home-manager.darwinModules.home-manager
-    self.darwinModules.users.andre
+    self.darwinModules.users.andrecardoso
   ];
 
   home-manager.useGlobalPkgs = true;

@@ -24,7 +24,6 @@
 
       channelsConfig.allowUnfree = true;
 
-      lib = import ./lib inputs;
       homeConfigurations = import ./home-configurations inputs;
       homeModules = import ./home-modules inputs;
       darwinConfigurations = import ./darwin-configurations inputs;

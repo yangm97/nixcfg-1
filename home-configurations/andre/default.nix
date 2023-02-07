@@ -25,13 +25,13 @@
   ];
 
   programs.neovim.enable = true;
-  programs.neovim.defaultEditor = true;
+  # programs.neovim.defaultEditor = true;
 
   # zsh
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
-    defaultKeymap = "vimcmd";
+    defaultKeymap = "vicmd";
 
     dirHashes = {
       dev = "$HOME/Dev";
@@ -91,9 +91,8 @@
     enable = true;
     userEmail = "andre.abadesso@gmail.com";
     userName = "André Abadesso";
-    signingkey = "580C90EDA4105A7A";
+    signing.key = "580C90EDA4105A7A";
     signing.signByDefault = true;
-    pull.rebase = true;
   };
 
   # TODO: export MCFLY_RESULTS=50
@@ -105,7 +104,7 @@
 
   programs.htop = {
     enable = true;
-  }
+  };
 
   programs.direnv = {
     enable = true;
