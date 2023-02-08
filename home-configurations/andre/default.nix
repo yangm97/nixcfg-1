@@ -20,8 +20,9 @@
     pkgs.kubectl
     pkgs.kustomize
     pkgs.terraform
+  ]++ lib.optionals pkgs.stdenv.targetPlatform.isDarwin [
     pkgs.cocoapods
-    # pkgs.watchman
+    # pkgs.watchman  
   ];
 
   programs.neovim.enable = true;
